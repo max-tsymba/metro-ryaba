@@ -1,0 +1,138 @@
+/*=======================================MASTER=========================================*/
+body{
+    font-weight: 400;
+}
+
+a{
+    color: #FFFFFF;
+    transition: .3s all;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .3s all;
+}
+/*======================================================================================*/
+
+
+/*=======================================SUPPORT========================================*/
+@import '../configs/mixin';
+
+%image-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+%title{
+    font-family: 'Roboto';
+    font-size: 42px;
+    font-weight: 700;
+    color: #2FB6B8;
+}
+
+%text{
+    font-family: 'PT Sans';
+    font-size: 10px;
+    font-weight: 400;
+    color: #000;
+}
+
+%button-date{
+    @include create-button(33, 350, 22);
+    color: #FFFFFF;
+    background-color: #2FB6B8;
+    font-weight: 700;
+
+    @media only screen and (max-width: 1024px) {
+        @include create-button(24, 250, 17);
+    }
+}
+
+%button-reg{
+    @include create-button(40, 540, 10);
+    color: #FFFFFF;
+    background-color: #D3003C;
+    font-weight: 700;
+}
+/*======================================================================================*/
+
+
+/*=======================================HEADER=========================================*/
+.burger{
+    cursor: pointer;
+    padding-top: 65px;
+    width: 54px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+
+    @media only screen and (max-width: 768px) {
+        padding-top: 0;
+    }
+
+    @media only screen and (max-width: 576px) {
+       margin-left: 5px;
+    }
+}
+
+.burger-line{
+    width: 54px;
+    height: 6px;
+    background: #323232;
+    position: absolute;
+    transition: .3s all;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+
+    &::after,
+    &::before{
+        content: "";
+        position: absolute;
+        height: 6px;
+        transition: .3s all;
+        border-radius: 4px;
+    }
+
+    &::after{
+        top: -13px;
+        background: #323232;
+        width: 54px;
+    }
+
+    &::before{
+        top: 13px;
+        background: #323232;
+        width: 54px;
+    }
+
+}
+
+.burger.active{
+    .burger-line {
+        width: 35px;
+        transform: translateX(-50%);
+        background-color: transparent;
+
+        &::after{
+            transform: rotate(-45deg) translate(8px, 17px);
+        }
+    
+        &::before{
+            transform: rotate(45deg) translate(5px, -20px);
+        }
+        
+    }
+}
+/*======================================================================================*/
+
+
+/*========================================FOOTER========================================*/
+
+/*======================================================================================*/
