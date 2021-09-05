@@ -1,5 +1,87 @@
 /*=========================================MAIN=========================================*/
+.header{
+    position: absolute;
+    background-color: #FFF762;
+    left: 0;
+    right: 0;
 
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 82px;
+        padding-bottom: 10px;
+
+        @media only screen and (max-width: 576px) {
+            padding-top: 53px;
+        }
+    }
+
+    &__logos{
+        width: 547px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media only screen and (max-width: 576px) {
+            width: 330px;
+        }
+
+        &-link{
+            &:nth-child(2) {
+                margin-left: 13px;
+            }
+            &:nth-child(3) {
+                margin-left: 20px;
+            }
+            outline: none;
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        align-items: flex-start;
+
+        &-btn{
+            @extend %button-date;
+            background-color: #004E85;
+            border-radius: 60px;
+            font-family: 'Roboto';
+            margin-right: 46px;
+            transition: .3s all;
+            outline: none;
+            
+            &:hover{
+                background-color: #013e69;
+            }
+
+            @media only screen and (max-width: 1024px) {
+                margin-right: 10px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.top-btn{
+    display: none;
+    margin-right: 0;
+    font-size: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 330px;
+    margin-top: 48px;
+
+    @media only screen and (max-width: 576px) {
+        display: block;
+        max-width: 100%;
+        order: 3;
+    }
+}
 /*======================================================================================*/
 
 

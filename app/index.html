@@ -3,14 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <title>Metro Ryaba</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     
     <!-- Header -->
-    <header class="header"></header>
+    <header class="header">
+        <div class="container">
+
+            <!-- Logos -->
+            <div class="header__inner">
+
+                <div class="header__logos">
+                    <a class="header__logos-link" href="/">
+                        <img class="header__logos-img" src="./images/ryaba-logo.png" alt="logo">
+                    </a>
+                    <a class="header__logos-link" href="#">
+                        <img class="header__logos-img" src="./images/ss-logo.png" alt="logo">
+                    </a>
+                    <a class="header__logos-link" href="#">
+                        <img class="header__logos-img" src="./images/ap-logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="header__buttons">
+                    <button class="header__buttons-btn" type="button">
+                        13.09.21 - 21.10.21
+                    </button>
+
+                    <div class="burger" id="burger">
+                        <div class="burger-line"></div>
+                    </div>
+                </div>
+
+            </div>
+            <!--  -->
+
+            <!-- Burger Menu -->
+            <div class="header__menu" style="display: none;">
+                <button class="header__menu-close">
+                    <img class="header__menu-img" src="./images/close.svg" alt="img">
+                </button>
+
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">
+                            Переможці
+                        </a>
+                    </li>
+
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="#">
+                            Офіційні правила акції
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--  -->
+
+        </div>
+    </header>
+    <!--  -->
 
     <!-- Wrapper -->
     <div class="wrapper">
