@@ -1,12 +1,12 @@
 /*=========================================MAIN=========================================*/
 .header{
     position: absolute;
-    background-color: #FFF762;
     left: 0;
     right: 0;
     
-    @media only screen and (min-width: 576px) {
+    @media only screen and (min-width: 577px) {
         height: 239px;
+        background-color: #FFF762;
     }
 
     &__inner{
@@ -84,6 +84,10 @@
         display: block;
         max-width: 100%;
         order: 3;
+    }
+
+    @media only screen and (max-width: 375px) {
+        font-size: 24px;
     }
 }
 /*======================================================================================*/

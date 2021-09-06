@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    
+
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -73,15 +75,25 @@
 
         <!-- Main -->
         <main class="main">
+
+            <!-- Top Section -->
             <section class="top">
 
-                <img class="top__image" src="./images/Banner.png" alt="banner">
+                <!-- Banner -->
+                <picture class="top__picture">
+                    <source srcset="./images/mobile-banner.png" media="(max-width: 576px)">
+                    <img class="top__image" src="./images/Banner.png" alt="banner">
+                </picture>
+                <!--  -->
 
                 <div class="container">
                     <div class="top__inner">
 
                         <div class="top__wish">
-                            <img class="top__wish-img" src="./images/mriya.png" alt="image">
+                            <picture class="top__wish-picture">
+                                <source srcset="./images/mobile-mriya.png" media="(max-width: 576px)">
+                                <img class="top__wish-img" src="./images/mriya.png" alt="image">
+                            </picture>
                         </div>
 
                         <button class="top__button">
@@ -101,7 +113,8 @@
                                 або
                             </p>
                             <a class="top__social-telegram" href="#">
-                                <img class="top__social-telegram_img" src="./images/telegram-logo.png" alt="telegram-logo">
+                                <img class="top__social-telegram_img" src="./images/telegram-logo.png"
+                                    alt="telegram-logo">
                             </a>
                         </div>
                         <!--  -->
@@ -110,12 +123,93 @@
                 </div>
 
             </section>
+            <!--  -->
+
+            <!-- Gifts -->
+            <section class="gifts">
+                <div class="container">
+
+                    <div class="gifts__inner">
+
+                        <h1 class="gifts__title">
+                            ЩоТИЖНЕВі ПОДАРУНКИ
+                        </h1>
+
+                        <!-- Gifts -->
+                        <div class="gifts__gallery">
+                            <div class="gifts__gallery-item">
+
+                                <div class="gifts__gallery-group">
+                                    <img class="gifts__gallery-img" src="./images/card-1.png" alt="image">
+                                    <img class="gifts__gallery-count" src="./images/group-30.png" alt="image">
+                                </div>
+
+                            </div>
+
+                            <div class="gifts__gallery-item">
+
+                                <div class="gifts__gallery-group">
+                                    <img class="gifts__gallery-img" src="./images/card-2.png" alt="image">
+                                    <img class="gifts__gallery-count" src="./images/group-50.png" alt="image">
+                                </div>
+
+                            </div>
+
+                            <div class="gifts__gallery-item">
+
+                                <div class="gifts__gallery-group">
+                                    <img class="gifts__gallery-img" src="./images/card-3.png" alt="image">
+                                    <img class="gifts__gallery-count" src="./images/group-100.png" alt="image">
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!--  -->
+
+                    </div>
+
+                </div>
+            </section>
+            <!--  -->
+
         </main>
 
         <!-- Footer -->
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="container">
+
+                <div class="footer__inner">
+                    <p class="footer__text">
+                        Для участі у розіграші щотижневих подарунків необхідно зареєструвати не менше 1 (одного) Коду,
+                        для участі у розіграші сертифікату на суму 100 000 грн необхідно зареєструвати не менше 15
+                        (п’ятнадцяти) Кодів, відповідно до офіційних Правил.
+                        Акція проводиться на всій території України, за винятком тимчасово окупованих територій України,
+                        на якій органи державної влади України тимчасово не здійснюють свої повноваження (частини
+                        Донецької та Луганської областей), АР Крим у всіх торгових центрах мережі «Метро». Акція діє з
+                        06 вересня 2021 року (00:00) за київським часом по 17 жовтня 2021 року (23:59) за київським
+                        часом включно. Замовник Акції – ПрАТ «МХП». <br>
+                        Отримання Подарунків 1,2,3,4, (Сертифікат номіналом 300 грн/ Сертифікат Метро номіналом 500 грн/
+                        Сертифікат Метро номіналом 1000 грн/ Грошова винагорода у розмірі 100 000 грн) відбувається за
+                        результатами розіграшу учасником Акції, який виконав всі умови Акції. Загальний подарунковий
+                        фонд становить: 100 шт. Сертифікатів Метро номіналом 300 грн, 50 шт. Сертифікатів Метро
+                        номіналом 500 грн, 30 шт. Сертифікатів Метро номіналом 1000 грн, 1 грошова винагорода розміром
+                        до 100 000 гривень). <br>
+                        Подарунки можуть відрізнятися від зображень на рекламно-інформаційних матеріалах. Грошовий
+                        еквівалент Подарунків (товарів, сертифікатів) не видається. Деталі на сайті ryaba.ua та
+                        promo.ryaba.ua
+                    </p>
+                </div>
+
+            </div>
+        </footer>
+        <!--  -->
+
     </div>
 
+    <!-- Scripts -->
     <script src="js/script.min.js"></script>
+    <!--  -->
 </body>
+
 </html>
