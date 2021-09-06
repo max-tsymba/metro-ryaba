@@ -14,6 +14,21 @@ const burgerOpener = (burgerID, menuSelector, closeBtnSelector, menuLinksSelecto
             menu.classList.remove('opened');
         });
     });
+
+    if(menuSelector === '#overlay') {
+        menu.addEventListener('click', (e) => {
+            if(e.target === menu) {
+                menu.classList.remove('opened');
+            }
+        })
+    } else {
+        document.body.addEventListener('click', (e) => {
+            console.log(e.target);
+            if(e.target !== menu && e.target !== burgerBtn && e.target !== document.querySelector('.burger-line')) {
+                menu.classList.remove('opened');
+            }
+        })
+    }
 }
 /*======================================================================================*/
 
