@@ -14,7 +14,7 @@
 
     <!-- Header -->
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
 
             <!-- Logos -->
             <div class="header__inner">
@@ -45,7 +45,7 @@
             <!--  -->
 
             <!-- Burger Menu -->
-            <div class="header__menu" style="display: none;">
+            <div class="header__menu">
                 <button class="header__menu-close">
                     <img class="header__menu-img" src="./images/close.svg" alt="img">
                 </button>
@@ -96,7 +96,7 @@
                             </picture>
                         </div>
 
-                        <button class="top__button">
+                        <button class="top__button" id="reg__button">
                             зареєструвати код
                         </button>
 
@@ -207,8 +207,70 @@
 
     </div>
 
+    <!-- Modal Form -->
+    <div id="overlay" class="overlay">
+
+        <div id="modal" class="modal">
+          <form class="modal-form" action="#" method="post">
+    
+            <div id="close-btn" class="close-btn">
+              <img src="./images/close-modal.svg" alt="close">
+            </div>
+    
+            <h2 class="modal-form__title">
+              РЕЄСТРАЦІЯ
+            </h2>
+    
+           <label class="modal-form__label" for="#">
+             <input type="text" required="" pattern="[А-Яа-яЁёіІїЇєЄҐґ'`’\s\-]{3,}" title="Будь ласка, використовуйте літери українського алфавіту" name="fullName" placeholder="Вкажіть Прізвище Ім’я та По Батькові">
+           </label>
+    
+           <label class="modal-form__label" for="#">
+            <input type="text" required="" name="phone" class="phone" placeholder="Номер телефону">
+          </label>
+    
+          <label class="modal-form__label" for="#">
+            <input type="text" required="" pattern="\w*" name="code" placeholder="Акцiйний код">
+          </label>
+    
+          <div class="checkbox">
+            <label class="custom-checkbox">
+              <input type="checkbox" name="confirm" required="">
+              <span>Я даю згоду на обробку<a href="/zghoda.pdf" target="_blank">персональних даних</a></span>
+            </label>
+          </div>
+    
+          <span class="result-text"></span>
+    
+          <div class="loader" id="circularG">
+            <div id="circularG_1" class="circularG"></div>
+            <div id="circularG_2" class="circularG"></div>
+            <div id="circularG_3" class="circularG"></div>
+            <div id="circularG_4" class="circularG"></div>
+            <div id="circularG_5" class="circularG"></div>
+            <div id="circularG_6" class="circularG"></div>
+            <div id="circularG_7" class="circularG"></div>
+            <div id="circularG_8" class="circularG"></div>
+          </div>
+    
+          <button class="modal-form__btn" type="submit">
+            Зареєструвати код
+          </button>
+    
+          </form>
+        </div>
+    
+    
+    </div>
+
     <!-- Scripts -->
+
+    <!-- reCaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LchsEcbAAAAAAP2kJyZ05L-V82IoKp9E43qU19M"></script>
+    <!--  -->
+    <script src="js/jquery.min.js"></script>
     <script src="js/script.min.js"></script>
+
     <!--  -->
 </body>
 
