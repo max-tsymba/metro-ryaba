@@ -113,6 +113,8 @@ function build() {
         'app/css/style.min.css',
         'app/fonts/**/*',
         'app/js/script.min.js',
+        'app/js/jquery.min.js',
+        'app/js/jquery.maskedinput.min.js',
     ], {
         base: 'app'
     }).pipe(dest('dist'))
