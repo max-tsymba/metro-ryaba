@@ -52,6 +52,7 @@
     &__wish{
         display: inline-block;
         margin-bottom: 30px;
+        animation: animate_shadow 1.5s ease-in infinite;
 
         @media only screen and (max-width: 576px) {
             order: 4;
@@ -149,6 +150,18 @@
     }
 }
 
+
+@keyframes animate_shadow {
+    0% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(0.96);
+    }
+    to {
+        transform: scale(1);
+    }
+}
 
 @keyframes animate_slogan {
     0% {
