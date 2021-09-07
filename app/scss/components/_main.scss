@@ -68,6 +68,7 @@
         border-radius: 60px;
         transition: .3s all;
         outline: none;
+        animation: animate_slogan 2s ease infinite;
 
         &:hover{
             transform: scale(1.05);
@@ -145,6 +146,22 @@
             order: 2;
             padding-top: 33px;
         }
+    }
+}
+
+
+@keyframes animate_slogan {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(#D3003C, 0.563);
+        box-shadow: 0 0 0 0 rgba(#D3003C, 0.563);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 12px transparent;
+        box-shadow: 0 0 0 12px transparent;
+    }
+    to {
+        -webkit-box-shadow: 0 0 0 0 transparent;
+        box-shadow: 0 0 0 0 transparent;
     }
 }
 /*======================================================================================*/
