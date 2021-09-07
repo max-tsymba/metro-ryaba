@@ -49,7 +49,7 @@ function buildJs() {
         './app/js/main.js'
     ]).pipe(webpack({
         entry: ['babel-polyfill', './app/js/main.js'],
-        mode: 'development',
+        mode: 'production',
         output: {
             filename: 'script.min.js'
         },
