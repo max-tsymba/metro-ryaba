@@ -51,13 +51,8 @@ body{
 }
 
 [data-aos][data-aos][data-aos-delay="300"].aos-animate, body[data-aos-delay="300"] [data-aos].aos-animate {
-    -webkit-transition-delay: .3s;
-    transition-delay: .3s;
-}
-
-[data-aos][data-aos][data-aos-easing=ease-in-back], body[data-aos-easing=ease-in-back] [data-aos] {
-    -webkit-transition-timing-function: cubic-bezier(.6,-.28,.735,.045);
-    transition-timing-function: cubic-bezier(.6,-.28,.735,.045);
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
 }
 
 [data-aos][data-aos][data-aos-delay="300"], body[data-aos-delay="300"] [data-aos] {
